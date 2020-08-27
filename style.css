@@ -1,0 +1,235 @@
+:root {
+    /* --color-text-title: hsl(202, 51%, 45%);
+    --color-text-subtitle: #79c7d4;
+    --color-header-container: #d3ffea;
+    --color-middle-container: #97e1eb;
+    --color-bottom-container: #4eaa7f;
+    --color-text-body: #3b8d94; */
+
+    --color-text-title: hsl(29, 51%, 45%);
+    --color-text-subtitle: #d4b979;
+    --color-header-container: #feffd3;
+    --color-middle-container: #ebce97;
+    --color-bottom-container: #aa7b4e;
+    --color-text-body: #948b3b;
+    
+    --color-js: rgb(219, 219, 78);
+    --color-css: rgb(149, 178, 226);
+    --color-node:rgb(87, 221, 116);
+    --color-react:rgb(37, 228, 235);
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    text-align: center;
+}
+
+hr {
+    border-style: dotted;
+    border-width: 6px;
+    border-top: none;
+    width: 10vw;
+    color: var(--color-header-container);
+    margin: 80px auto;
+}
+
+.header-container {
+    padding: 30px;
+    background-color: var(--color-header-container);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    height: 30vh;
+}
+
+.header-container h1 {
+    color: var(--color-text-title);
+    font-weight: bold;
+    font-size: 5em;
+    font-family: 'Sacramento', sans-serif;
+}
+
+.header-container p {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: .3rem;
+    color: var(--color-text-subtitle);
+}
+
+.pic {
+    height: 110px;
+    width: 110px;
+    margin-right: 50px;
+    border-radius: 50%;
+    border: 1px solid var(--color-text-title)
+}
+
+.middle-container {
+    background-color: var(--color-middle-container);
+    padding: 80px 0 30px;
+}
+
+
+.middle-container h3 {
+    color: var(--color-text-title);
+    margin: 20px auto 0;
+    font-size: 28px;
+    letter-spacing: 4px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.middle-container .skills {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto 30px;
+}
+
+.middle-container .skill-img {
+    margin: 0 20px;
+    padding: 0;
+    height: 120px;
+    width: 120px;
+}
+
+.middle-container p {
+    color: var(--color-text-body);
+    width: 500px;
+    margin: 15px 30px 0 30px;
+    text-align: left;
+    line-height: 1.4em;
+    letter-spacing: 1.5px;
+}
+
+.stack-list {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto 0;
+    /* width: 100px; */
+}
+
+.stack {
+    background-color: lightgreen;
+    width: 80px;
+    height: 80px;
+    margin: 0 40px;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: -0px 0px 10px white;
+}
+
+.stack span {
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.bottom-container {
+    padding-top: 30px;
+    background-color: var(--color-bottom-container);
+}
+
+.bottom-container h3 {
+    color: var(--color-header-container);
+    font-weight: 400;
+}
+
+.bottom-container .social-media {
+    margin: 10px auto;
+}
+
+.bottom-container .social-media a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: var(--color-middle-container);
+}
+
+.bottom-container .attribution {
+    padding: 0 0 5px 5px;
+    text-align: left;
+    font-size: 12px;
+    color: var(--color-middle-container);
+}
+
+.bottom-container .attribution a {
+    text-decoration: none;
+    color: white;
+}
+
+.hobbies {
+    margin-bottom: 0;
+}
+
+.hobbies span {
+    font-weight: bold;
+    
+}
+
+#css {
+    background-color: #4b81ad;
+    color: #ffffff;
+    
+}
+
+#javascript {
+    background-color: #494949;
+    color: #fffb00;
+    
+}
+
+#node {
+    background-color: #68d310;
+    color: #ffffff;
+    
+}
+
+#react {
+    background-color: #2a2a2a;
+    color: #00d9ff;
+    
+}
+
+.contact p {
+    margin: 0px auto 30px;
+}
+
+.contact label, .contact input {
+    margin: 0 0 20px;
+    color: var(--color-text-body)
+}
+
+.contact input {
+    outline: none;
+
+    border: 1px solid var(--color-header-container);
+    color: grey;
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+
+.contact textarea {
+    border: 1px solid var(--color-text-subtitle);
+    color: grey;
+    outline: none;
+    padding: 10px;
+}
+
+.submit {
+    width: 150px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.submit:hover {
+    color: white;
+    background-color: var(--color-bottom-container);
+}
